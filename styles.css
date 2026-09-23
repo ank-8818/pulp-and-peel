@@ -1,0 +1,328 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+}
+
+.heading{
+    font-family: 'Fredoka', sans-serif;
+    color: #1A1423;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+h2{
+    font-family: 'Fredoka', sans-serif;
+    color: #1A1423;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 1.375rem;
+    color: #1A1423;
+    font-weight: 700;
+}
+
+.body-text{
+    color: #50475C;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.hero-text{
+    font-size: 1.2rem;;
+}
+
+.card-text{
+    color: #50475C;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#nav-bar{
+    background-color: #0A4444;
+}
+
+#features{
+    background-color: #FFF6D9;
+}
+
+#featured-drink{
+    background-color: #FF5D73;
+}
+
+#featured-drink h2{
+    color: #FDFBF7;
+    font-weight: 600;
+}
+
+#featured-drink p{
+    color: #FFE3E7;
+}
+
+.light-text {
+    color: #FDFBF7;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+#origin{
+    background-color: #E7EEE8;
+}
+
+#cta{
+    background-color: #0F5E5E;
+    color: #FDFBF7;
+}
+
+#footer{
+    background-color: #1A1423;
+    font-size: 0.8rem;
+}
+
+.nav-link{
+    color: #FDFBF7;
+    font-weight: 400;
+}
+
+.nav-link:hover{
+    color: #FF8C42;
+}
+
+/* Shared base for all three button variants */
+.button-solid,
+.button-outline,
+.button-green{
+    border-radius: 30px;
+    font-weight: 600;
+    padding: 10px 24px;
+    font-size: 1rem;
+}
+
+.button-solid{
+    background-color: #FF8C42;
+    color: #FDFBF7;
+    border: solid 2px #FF8C42;
+}
+
+.button-solid:hover{
+    background-color: #FDFBF7;
+    color: #FF8C42;
+    border: solid 2px #FF8C42;
+}
+
+.button-outline{
+    border: solid 2px #0A4444;
+    color: #0A4444;
+}
+
+.button-outline:hover{
+    background-color: #0A4444;
+    color: #FDFBF7;
+}
+
+.button-green{
+    background-color: #0A4444;
+    color: #FDFBF7;
+}
+
+.button-green:hover{
+    background-color: #FDFBF7;
+    color: #0A4444;
+}
+
+.nav-pills .nav-link {
+  color: #1A1423;
+  background-color: transparent;
+  border: 1.5px solid #E8E2D8;
+  border-radius: 50px;
+  padding: 8px 20px;
+  margin: 0 6px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #FF8C42;
+  color: #FFFFFF;
+  border-color: #FF8C42;
+}
+
+#hero-section, #menu, #locations{
+    background-color: #FDFBF7;
+}
+
+/* Shared base for both eyebrow label variants */
+.eyebrow-label,
+.eyebrow-label-light {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.eyebrow-label {
+  background-color: #FFE3E7;
+  color: #FF5D73;
+  border: 1px solid #FF5D73;
+}
+
+.eyebrow-label-light {
+  color: #FDFBF7;
+  border: 1px solid #FDFBF7;
+}
+
+.quote {
+  display: inline-block;
+  width: 100%;
+  padding: 24px;
+  background-color: #FDFBF7;
+  color: #FF5D73;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border: 1px solid #50475C40;
+  height: 100%;
+  transition: transform 0.2s ease;
+  padding: 10px;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Menu card */
+.menu-section {
+  background-color: #FDFBF7;
+  padding: 80px 0;
+}
+
+.reset-pack {
+  color: #FF5D73;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.reset-pack span{
+    font-weight: 700;
+}
+
+.menu-card {
+  background-color: #FFFFFF;
+  border: solid 1px #50475C40;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  overflow: hidden;
+}
+
+.menu-card-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.menu-card-title {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+}
+
+.menu-card-ingredients {
+  font-size: 0.85rem;
+  color: #3D5A5A;
+  margin-bottom: 6px;
+}
+
+.menu-card-punchline {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #FF5D73;
+  margin-bottom: 12px;
+}
+
+.menu-card-pricing {
+  display: flex;
+  gap: 14px;
+  font-size: 0.8rem;
+  color: #0F5E5E;
+}
+
+.menu-card-pricing strong {
+  display: block;
+  font-size: 0.9rem;
+}
+
+.menu-card-image {
+  width: 140px;
+  height: 140px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.menu-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+#origin img{
+    border-radius: 15px;
+}
+
+#origin .italic-text{
+    font-style: italic;
+}
+
+#origin .green-text{
+    color: #0F5E5E;
+}
+
+.pink-text{
+    color: #FF5D73;
+}
+
+#locations .pink-text{
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+#locations .timing{
+    color: #0F5E5E;
+    font-weight: 600;
+}
+
+h5{
+    color: #FF8C42;
+    font-weight: 700;
+}
+
+.icon-color{
+    color: #FDFBF7;
+    margin-right: 10px;
+}
