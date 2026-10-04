@@ -1,5 +1,6 @@
 html{
     font-size: 16px;
+    overflow-x: hidden;
 }
 
 body{
@@ -52,6 +53,7 @@ h3{
 
 #featured-drink{
     background-color: #FF5D73;
+    overflow-x: hidden;
 }
 
 #featured-drink h2{
@@ -90,6 +92,14 @@ h3{
 
 .nav-link:hover{
     color: #FF8C42;
+}
+
+#cta h2 {
+    color: #FDFBF7;
+}
+
+.demo {
+    font-size: 0.7rem;
 }
 
 /* Shared base for all three button variants */
@@ -154,6 +164,19 @@ h3{
 #hero-section, #menu, #locations{
     background-color: #FDFBF7;
 }
+
+.navbar-toggler {
+  --bs-navbar-toggler-border-color: #FDFBF7;
+}   
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255, 255, 255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-nav .nav-link {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}   
 
 /* Shared base for both eyebrow label variants */
 .eyebrow-label,
@@ -315,6 +338,7 @@ h3{
 #locations .timing{
     color: #0F5E5E;
     font-weight: 600;
+    font-size: 0.8rem;
 }
 
 h5{

@@ -14,630 +14,650 @@
 
     <!--Navigation Bar-->
     <section id="nav-bar">
-        <div class="container">
-            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 mb-4">
-                <div class="col-md-3 mb-2 mb-md-0">
-                    <img src="./images/pulp-and-peel-logo.png" alt="pulp-and-peel-logo" class="logo" height="50"/>
-                </div>
-                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="#menu" class="nav-link px-2">Menu</a></li>
-                    <li><a href="#origin" class="nav-link px-2">Story</a></li>
-                    <li><a href="#locations" class="nav-link px-2">Locations</a></li>
+        <nav class="navbar navbar-expand-md align-items-center">
+            <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="./images/pulp-and-peel-logo.png" alt="pulp-and-peel-logo" height="40" class="d-inline-block align-text-top">
+            </a>
+
+            <!-- Hamburger toggle (visible below md) -->
+            <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navMenu"
+                    aria-controls="navMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#origin">Story</a></li>
+                <li class="nav-item"><a class="nav-link" href="#locations">Locations</a></li>
                 </ul>
-                <div class="col-md-3 text-end">
-                    <a href="#menu" class="btn button-solid me-2">Order Now</a>
-                </div>
-            </header>
-        </div>
-    </section>
-
-    <!--Hero Section-->
-    <section id="hero-section">
-        <div class="container px-4 mt-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-12 col-sm-10 col-lg-6">
-                    <img src="./images/hero-image.png" class="d-block mx-lg-auto img-fluid" alt="fruit-explosion-hero-image" width="1800" height="700" loading="lazy">
-                </div>
-                <div class="col-lg-6">
-                    <span class="eyebrow-label">Zero Punishment. All Taste.</span>
-                    <h1 class="display-5 fw-bold lh-1 mb-3 heading">Pick Your Pulp.</h1>
-                    <p class="lead hero-text">Four ways to juice, blend, or shoot your way to feeling good. Fruit is already fun, so stop letting wellness culture bully you. No calorie-counting side-eyes.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
-                        <a href="#locations" class="btn button-solid me-md-2">Find Nearest Pulp</a>
-                        <a href="#menu" class="btn button-outline">Explore Menu</a>
-                    </div>
-                </div>
+                <a href="#menu" class="btn button-solid">Order Now</a>
             </div>
-        </div>
-    </section>
-
-    <!--Features-->
-    <section id="features">
-        <div class="container py-4">
-            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-                <span class="eyebrow-label">Why Pulp & Peel?</span>
-                <h2>No Fuss. No Punishment. Just Real <br class="d-none d-md-block"> Liquid Gold.</h2>
             </div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 my-3">
-                <div class="col mb-3">
-                    <div class="card rounded-5 shadow-sm">
-                        <div class="card-body">
-                            <img src="./images/icons/cold-press.png" alt="cold-pressed-daily-icon" height="80" class="icon"/>
-                            <h3 class="card-heading">Cold-Pressed Daily</h3>
-                            <p class="card-text">Hydraulic pressure, no heat damage. We crush the fruit but keep the flavor soul intact.</p>
-                        </div>
+        </nav>
+    </section>  
+    
+    <main>
+
+        <!--Hero Section-->
+        <section id="hero-section">
+            <div class="container px-4 mt-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-12 col-sm-10 col-lg-6">
+                        <img src="./images/hero-image.png" class="d-block mx-lg-auto img-fluid" alt="fruit-explosion-hero-image" width="1800" height="700" loading="eager">
                     </div>
-                </div>
-                <div class="col mb-3">
-                    <div class="card rounded-5 shadow-sm">
-                        <div class="card-body">
-                            <img src="./images/icons/no-sugar.png" alt="locally-sourced-icon" height="80" class="icon"/>
-                            <h3 class="card-heading">Zero Added Sugar</h3>
-                            <p class="card-text">Nature made it sweet enough. No sugary syrup pumps or fake powders allowed.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-3">
-                    <div class="card rounded-5 shadow-sm">
-                        <div class="card-body">
-                            <img src="./images/icons/local-sourced.png" alt="no-added-sugar-icon" height="80" class="icon"/>
-                            <h3 class="card-heading">Locally Sourced</h3>
-                            <p class="card-text">Our greens and apples come straight from regional family farms we actually know.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-3">
-                    <div class="card rounded-5 shadow-sm">
-                        <div class="card-body">
-                            <img src="./images/icons/ready-to-go.png" alt="grab-and-go-icon" height="80" class="icon"/>
-                            <h3 class="card-heading">Grab & Go</h3>
-                            <p class="card-text">In and out in under 2 minutes, no long lines. Your morning shouldn't start with a queue.</p>
+                    <div class="col-lg-6">
+                        <span class="eyebrow-label">Zero Punishment. All Taste.</span>
+                        <h1 class="display-5 fw-bold lh-1 mb-3 heading">Pick Your Pulp.</h1>
+                        <p class="lead hero-text">Four ways to juice, blend, or shoot your way to feeling good. Fruit is already fun, so stop letting wellness culture bully you. No calorie-counting side-eyes.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
+                            <a href="#locations" class="btn button-solid me-md-2">Find Nearest Pulp</a>
+                            <a href="#menu" class="btn button-outline">Explore Menu</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!--Today's Pick-->
-    <section id="featured-drink">
-        <div class="container mt-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-12 col-md-6">
-                    <img src="./images/featured-drink.png" class="d-block mx-lg-auto img-fluid" alt="fruit-explosion-hero-image" width="1800" height="700" loading="lazy">
-                </div>
-                <div class="col-md-6">
-                    <span class="eyebrow-label-light">Today's Pick</span>
-                    <h2>Tropic Thunder</h2>
-                    <p class="body-text">A tropical mash-up of mango, pineapple, and coconut water, finished with a squeeze of lime — built for the days you need to feel like you're somewhere warmer.</p>
-                    <span class="quote">"The one that tastes like you're already on vacation."</span>
-                    <a href="#menu" class="btn button-green mt-3">Get the full Menu</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Menu-->
-    <section id="menu">
-        <div class="container py-5">
-            <div>
+        <!--Features-->
+        <section id="features">
+            <div class="container py-4">
                 <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-                <span class="eyebrow-label">The Menu</span>
-                <h2>Liquid Joy, Bottled Daily.</h2>
-            </div>
-            <ul class="nav nav-pills justify-content-center mb-4" id="menuTabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active rounded-5" id="juices-tab" data-bs-toggle="pill" data-bs-target="#juices" type="button" role="tab">Cold-Pressed Juices</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link rounded-5" id="smoothies-tab" data-bs-toggle="pill" data-bs-target="#smoothies" type="button" role="tab">Super Smoothies</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link rounded-5" id="shots-tab" data-bs-toggle="pill" data-bs-target="#shots" type="button" role="tab">Power Shots</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link rounded-5" id="snacks-tab" data-bs-toggle="pill" data-bs-target="#snacks" type="button" role="tab">Chef Snacks</button>
-                </li>
-            </ul>
-            <div class="tab-content" id="menuTabsContent">
-                <!--Juices-->
-                <div class="tab-pane fade show active" id="juices" role="tabpanel">
-                    <p class="reset-pack text-center mb-4"><span>The Reset Pack</span> — Any 3 Smalls for <span>$16</span>!</p>  
-                    <div class="row g-4">
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">Green Machine</h3>
-                                    <p class="menu-card-ingredients">Kale, apple, cucumber, lemon, ginger</p>
-                                    <p class="menu-card-punchline">"Tastes like a salad had a glow-up."</p>
-                                    <div class="menu-card-pricing">
-                                        <span>S <strong>$6.50</strong></span>
-                                        <span>M <strong>$7.50</strong></span>
-                                        <span>L <strong>$8.50</strong></span>
-                                    </div>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/juices/green-machine.png" alt="Green machine juice">
-                                </div>
-                            </div>            
-                        </div>
-                        
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">Sunrise</h3>
-                                    <p class="menu-card-ingredients">Carrot, Orange, Turmeric, Black pepper</p>
-                                    <p class="menu-card-punchline">"Sunshine, but you can drink it."</p>
-                                    <div class="menu-card-pricing">
-                                        <span>S <strong>$6.50</strong></span>
-                                        <span>M <strong>$8.00</strong></span>
-                                        <span>L <strong>$9.50</strong></span>
-                                    </div>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/juices/sunrise.png" alt="Sunrise juice">
-                                </div>
-                            </div>            
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">Beet Street</h3>
-                                    <p class="menu-card-ingredients">Beet, Apple, Celery, Lemon</p>
-                                    <p class="menu-card-punchline">"Earthy, sweet, a little dramatic — like it wants applause."</p>
-                                    <div class="menu-card-pricing">
-                                        <span>S <strong>$5.50</strong></span>
-                                        <span>M <strong>$7.00</strong></span>
-                                        <span>L <strong>$8.50</strong></span>
-                                    </div>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/juices/beet-street.png" alt="Beet Street juice">
-                                </div>
-                            </div>            
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">Citrus Snap</h3>
-                                    <p class="menu-card-ingredients">Grapefruit, Orange, Mint, A touch of Lime</p>
-                                    <p class="menu-card-punchline">"A wake-up call, minus the yelling."</p>
-                                    <div class="menu-card-pricing">
-                                        <span>S <strong>$7.50</strong></span>
-                                        <span>M <strong>$9.00</strong></span>
-                                        <span>L <strong>$10.50</strong></span>
-                                    </div>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/juices/citrus-snap.png" alt="Citrus Snap juice">
-                                </div>
-                            </div>            
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">Watermelon Wake-Up</h3>
-                                    <p class="menu-card-ingredients">Watermelon, Mint, Lime, Cucumber</p>
-                                    <p class="menu-card-punchline">“Basically summer in a bottle."</p>
-                                    <div class="menu-card-pricing">
-                                        <span>S <strong>$7.00</strong></span>
-                                        <span>M <strong>$8.50</strong></span>
-                                        <span>L <strong>$10.00</strong></span>
-                                    </div>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/juices/watermelon-wakeup.png" alt="Watermelon Wake-up juice">
-                                </div>
-                            </div>            
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">Golden Hour</h3>
-                                    <p class="menu-card-ingredients">Pineapple, Turmeric, Orange, Ginger</p>
-                                    <p class="menu-card-punchline">“Sunset colors, sunrise energy."</p>
-                                    <div class="menu-card-pricing">
-                                        <span>S <strong>$7.00</strong></span>
-                                        <span>M <strong>$8.50</strong></span>
-                                        <span>L <strong>$10.00</strong></span>
-                                    </div>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/juices/golden-hour.png" alt="Golden Hour juice">
-                                </div>
-                            </div>            
+                    <span class="eyebrow-label">Why Pulp & Peel?</span>
+                    <h2>No Fuss. No Punishment. Just Real <br class="d-none d-md-block"> Liquid Gold.</h2>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 my-3">
+                    <div class="col mb-3">
+                        <div class="card rounded-5 shadow-sm">
+                            <div class="card-body">
+                                <img src="./images/icons/cold-press.png" alt="cold-pressed-daily-icon" height="80" class="icon"/>
+                                <h3 class="card-heading">Cold-Pressed Daily</h3>
+                                <p class="card-text">Hydraulic pressure, no heat damage. We crush the fruit but keep the flavor soul intact.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <!--Smoothies-->
-                <div class="tab-pane fade" id="smoothies" role="tabpanel">
-                    <div class="row g-4">
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">Berry Loop</h3>
-                                    <p class="menu-card-ingredients">Mixed berries, Banana, Almond milk, Honey</p>
-                                    <p class="menu-card-punchline">"Breakfast that doesn't require chewing."</p>
-                                    <div class="menu-card-pricing">
-                                        <span>S <strong>$6.50</strong></span>
-                                        <span>M <strong>$7.75</strong></span>
-                                        <span>L <strong>$9.00</strong></span>
-                                    </div>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/smoothies/berry-loop.png" alt="Berry Loop Smoothie">
-                                </div>
-                            </div>            
-                        </div>
-                        
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">Tropic Thunder</h3>
-                                    <p class="menu-card-ingredients">Mango, Pineapple, Coconut water, Lime</p>
-                                    <p class="menu-card-punchline">"The one that tastes like you're already on vacation."</p>
-                                    <div class="menu-card-pricing">
-                                        <span>S <strong>$6.50</strong></span>
-                                        <span>M <strong>$8.00</strong></span>
-                                        <span>L <strong>$9.50</strong></span>
-                                    </div>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/smoothies/tropic-thunder.png" alt="Tropic Thunder Smoothie">
-                                </div>
-                            </div>            
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">Choc Protein Punch</h3>
-                                    <p class="menu-card-ingredients">Banana, Cocoa, Peanut butter, Protein powder, Oat milk</p>
-                                    <p class="menu-card-punchline">"Dessert with a gym membership."</p>
-                                    <div class="menu-card-pricing">
-                                        <span>S <strong>$8.00</strong></span>
-                                        <span>M <strong>$9.50</strong></span>
-                                        <span>L <strong>$11.00</strong></span>
-                                    </div>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/smoothies/choc-protein.png" alt="Choc Protein Smoothie">
-                                </div>
-                            </div>            
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">Green Glow</h3>
-                                    <p class="menu-card-ingredients">Spinach, Mango, Banana, Coconut water</p>
-                                    <p class="menu-card-punchline">"Sneaks in the greens. No one has to know."</p>
-                                    <div class="menu-card-pricing">
-                                        <span>S <strong>$6.50</strong></span>
-                                        <span>M <strong>$7.75</strong></span>
-                                        <span>L <strong>$9.00</strong></span>
-                                    </div>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/smoothies/green-glow.png" alt="Green Glow Smoothie">
-                                </div>
-                            </div>            
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">PB Banana Split</h3>
-                                    <p class="menu-card-ingredients">Banana, Peanut butter, Oat milk, Dates, Cinnamon</p>
-                                    <p class="menu-card-punchline">"Dessert that lied about being healthy."</p>
-                                    <div class="menu-card-pricing">
-                                        <span>S <strong>$7.50</strong></span>
-                                        <span>M <strong>$9.00</strong></span>
-                                        <span>L <strong>$10.50</strong></span>
-                                    </div>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/smoothies/pb-banana-split.png" alt="PB Banana Split Smoothie">
-                                </div>
-                            </div>            
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">Piña Chill</h3>
-                                    <p class="menu-card-ingredients">Pineapple, Coconut milk, Banana, Vanilla</p>
-                                    <p class="menu-card-punchline">"Beach vacation, extended edition."</p>
-                                    <div class="menu-card-pricing">
-                                        <span>S <strong>$6.75</strong></span>
-                                        <span>M <strong>$8.00</strong></span>
-                                        <span>L <strong>$9.25</strong></span>
-                                    </div>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/smoothies/pina-chill.png" alt="Piña Chill Smoothie">
-                                </div>
-                            </div>            
+                    <div class="col mb-3">
+                        <div class="card rounded-5 shadow-sm">
+                            <div class="card-body">
+                                <img src="./images/icons/no-sugar.png" alt="no-sugar-icon" height="80" class="icon"/>
+                                <h3 class="card-heading">Zero Added Sugar</h3>
+                                <p class="card-text">Nature made it sweet enough. No sugary syrup pumps or fake powders allowed.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <!--Wellness Shots-->
-                <div class="tab-pane fade" id="shots" role="tabpanel">
-                    <p class="reset-pack text-center mb-4"><span>The Wellness Pack</span> — Any 3 for <span>$11</span>!</p>  
-                    <div class="row g-4">
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">Beet It</h3>
-                                    <p class="menu-card-ingredients">Beet, Ginger, <br/> Lemon</p>
-                                    <p class="menu-card-punchline">"Small cup. Big opinions."</p>
-                                    <strong class="menu-card-pricing">$6.50</strong>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/wellness-shots/beet-it.png" alt="Beet It Shot">
-                                </div>
-                            </div>            
-                        </div>
-                        
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">Citrus Zing</h3>
-                                    <p class="menu-card-ingredients">Lemon, Cayenne, Maple syrup</p>
-                                    <p class="menu-card-punchline">"Sweet with a slap."</p>
-                                    <strong class="menu-card-pricing">$3.75</strong>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/wellness-shots/citrus-zing.png" alt="Fire Starter Shot">
-                                </div>
-                            </div>            
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">Immunity Bomb</h3>
-                                    <p class="menu-card-ingredients">Ginger, Garlic, Lemon, Honey, Cayenne</p>
-                                    <p class="menu-card-punchline">"Not subtle. Not sorry."</p>
-                                    <strong class="menu-card-pricing">$4.50</strong>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/wellness-shots/immunity-bomb.png" alt="Immunity Bomb Shot">
-                                </div>
-                            </div>            
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">Fire Starter</h3>
-                                    <p class="menu-card-ingredients">Turmeric, Cayenne, Orange, Black pepper</p>
-                                    <p class="menu-card-punchline">"Warning: may cause sudden motivation."</p>
-                                    <strong class="menu-card-pricing">$4.00</strong>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/wellness-shots/fire-starter.png" alt="Fire Starter Shot">
-                                </div>
-                            </div>            
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">Deep Roots</h3>
-                                    <p class="menu-card-ingredients">Ginger, Turmeric, Black pepper</p>
-                                    <p class="menu-card-punchline">"Old-school remedy, new-school cup."</p>
-                                    <strong class="menu-card-pricing">$4.00</strong>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/wellness-shots/deep-roots.png" alt="Deep Roots Shot">
-                                </div>
-                            </div>            
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">Cool Down</h3>
-                                    <p class="menu-card-ingredients">Cucumber, Mint, Lime, Aloe</p>
-                                    <p class="menu-card-punchline">"For when Fire Starter feels like too much."</p>
-                                    <strong class="menu-card-pricing">$3.75</strong>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/wellness-shots/cool-down.png" alt="Cool Down Shot">
-                                </div>
-                            </div>            
+                    <div class="col mb-3">
+                        <div class="card rounded-5 shadow-sm">
+                            <div class="card-body">
+                                <img src="./images/icons/local-sourced.png" alt="locally-sourced-icon" height="80" class="icon"/>
+                                <h3 class="card-heading">Locally Sourced</h3>
+                                <p class="card-text">Our greens and apples come straight from regional family farms we actually know.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <!--Snacks-->
-                <div class="tab-pane fade" id="snacks" role="tabpanel">
-                    <p class="reset-pack text-center mb-4"><span>The Foodie Pack</span> — Any 2 for <span>$7.50</span>!</p>  
-                    <div class="row g-4">
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">Peanut Butter Oat Energy Balls</h3>
-                                    <p class="menu-card-ingredients">Oats, Peanut butter, Honey, Chia seeds</p>
-                                    <p class="menu-card-punchline">"Fuel that doesn't taste like fuel."</p>
-                                    <strong class="menu-card-pricing">$4.00</strong>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/snacks/peanutbutter-oat-energy-balls.png" alt="Peanut Butter Oat Energy Balls">
-                                </div>
-                            </div>            
-                        </div>
-                        
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">Chocolate Almond Granola Bites</h3>
-                                    <p class="menu-card-ingredients">Granola, Almonds, Dark chocolate, Dates</p>
-                                    <p class="menu-card-punchline">"The healthy snack that forgot to tell you it's healthy."</p>
-                                    <strong class="menu-card-pricing">$4.50</strong>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/snacks/chocolate-almond-granola-bites.png" alt="Chocolate Almond Granola Bites">
-                                </div>
-                            </div>            
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">Coconut Lime Bites</h3>
-                                    <p class="menu-card-ingredients">Coconut flakes, Lime zest, Cashews, Dates</p>
-                                    <p class="menu-card-punchline">"Tropical, but make it a snack."</p>
-                                    <strong class="menu-card-pricing">$4.00</strong>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/snacks/coconut-lime-bites.png" alt="Coconut Lime Bites">
-                                </div>
-                            </div>            
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">Berry Oat Squares</h3>
-                                    <p class="menu-card-ingredients">Oats, Dried berries, Honey, Almond butter</p>
-                                    <p class="menu-card-punchline">"Breakfast, disguised as dessert."</p>
-                                    <strong class="menu-card-pricing">$4.25</strong>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/snacks/berry-oat-bites.png" alt="Berry Oat Squares">
-                                </div>
-                            </div>            
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">Almond Date Bites</h3>
-                                    <p class="menu-card-ingredients">Almonds, Dates, Chia seeds, Sea salt</p>
-                                    <p class="menu-card-punchline">"Three ingredients. Zero apologies."</p>
-                                    <strong class="menu-card-pricing">$3.75</strong>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/snacks/almond-date-bites.png" alt="Almond Date Bites">
-                                </div>
-                            </div>            
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-card h-100">
-                                <div class="menu-card-content">
-                                    <h3 class="menu-card-title">Tropical Trail Mix</h3>
-                                    <p class="menu-card-ingredients">Dried mango, Coconut flakes, Cashews, Pumpkin seeds</p>
-                                    <p class="menu-card-punchline">"Snacking, but make it a vacation."</p>
-                                    <strong class="menu-card-pricing">$4.50</strong>
-                                </div>
-                                <div class="menu-card-image">
-                                    <img src="./images/snacks/tropical-trail-mix.png" alt="Tropical Trail Mix">
-                                </div>
-                            </div>            
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>       
-    </section>
-
-    <!--Origin Story-->
-    <section id="origin">
-        <div class="container px-4 mt-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-12 col-sm-10 col-lg-5">
-                    <img src="./images/our-story-image.png" class="d-block mx-lg-auto img-fluid" alt="our store and blenders" width="1800" height="700" loading="lazy">
-                </div>
-                <div class="col-lg-7">
-                    <span class="eyebrow-label">Our Origin</span>
-                    <h2>Fruit, Not Fuss</h2>
-                    <p class="body-text">Pulp & Peel started with a simple question: <span class="italic-text">why does “healthy” have to feel like a punishment?</span></p>
-                    <p class="body-text">Our founder, a former line cook, was tired of the guilt, rules, and joyless side of clean eating. So we went back to what makes food fun: <span class="green-text">real fruit</span>, <span class="green-text">bold flavors</span>, and <span class="green-text">no lectures</span>.</p>
-                    <p class="body-text">Built for busy mornings, post-gym cravings, and quick lunch breaks, Pulp & Peel keeps things fresh, fast, and full of personality.</p>
-                    <strong class="pink-text">No guilt. No lectures. Just good fruit.</strong>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Location-->
-    <section id="locations">
-        <div class="container py-4">
-            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-                <span class="eyebrow-label">Find A Bar</span>
-                <h2>Where To Find Us?</h2>
-            </div>
-            <div class="row row-cols-1 row-cols-md-3 my-3 text-left">
-                <div class="col mb-3">
-                    <div class="card rounded-5 shadow-sm">
-                        <div class="card-body">
-                            <h3 class="card-heading">Downtown Gym Loop</h3>
-                            <p class="card-text">140 Pine St, Suite A</p>
-                            <p class="pink-text">Our very first counter.</p>
-                            <p class="timing">Mon-Fri: 7am - 7pm <br class="d-none d-lg-block"/>Sat-Sun: 7am - 4pm</p>
-                            <button type="button" class="btn button-outline mt-2">Get Directions</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-3">
-                    <div class="card rounded-5 shadow-sm">
-                        <div class="card-body">
-                            <h3 class="card-heading">Campus Corner</h3>
-                            <p class="card-text">9 University Ave</p>
-                            <p class="pink-text">Late hours for late study sessions.</p>
-                            <p class="timing">Mon-Fri: 7am - 9pm <br class="d-none d-lg-block"/> Sat-Sun: 9am - 6pm</p>
-                            <button type="button" class="btn button-outline mt-2">Get Directions</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-3">
-                    <div class="card rounded-5 shadow-sm">
-                        <div class="card-body">
-                            <h3 class="card-heading">Riverside</h3>
-                            <p class="card-text">48 Harbor Lane</p>
-                            <p class="pink-text">Right by the running trail — grab one post-jog.</p>
-                            <p class="timing">Mon-Fri: 7am - 8pm <br class="d-none d-lg-block"/> Sat-Sun: 9am - 4pm</p>
-                            <button type="button" class="btn button-outline mt-2">Get Directions</button>
+                    <div class="col mb-3">
+                        <div class="card rounded-5 shadow-sm">
+                            <div class="card-body">
+                                <img src="./images/icons/ready-to-go.png" alt="grab-and-go-icon" height="80" class="icon"/>
+                                <h3 class="card-heading">Grab & Go</h3>
+                                <p class="card-text">In and out in under 2 minutes, no long lines. Your morning shouldn't start with a queue.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!--CTA banner-->
-    <section id="cta">
-        <div class="container px-4 mt-5">
-            <div class="row align-items-center g-5 py-5">
-                <div class="col-12 col-sm-10 col-lg-6">
-                    <h2>Don't miss a drop. Get 10% off on your first order.</h2>
-                    <p>Join the Loop for secret menu drops, weekly discounts, and first dibs on new flavors.</p>                     
-                </div>
-                <div class="col-lg-6 px-3">
-                    <div class="row g-2 align-items-center">
-                        <div class="col">
-                            <input type="email" class="form-control p-3 rounded-5" placeholder="Enter your email" required>
+        <!--Today's Pick-->
+        <section id="featured-drink">
+            <div class="container mt-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-12 col-md-6">
+                        <img src="./images/featured-drink.png" class="d-block mx-lg-auto img-fluid" alt="Featured Drink image" loading="lazy">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <span class="eyebrow-label-light">Today's Pick</span>
+                        <h2>Tropic Thunder</h2>
+                        <p class="body-text">A tropical mash-up of mango, pineapple, and coconut water, finished with a squeeze of lime — built for the days you need to feel like you're somewhere warmer.</p>
+                        <span class="quote">"The one that tastes like you're already on vacation."</span>
+                        <a href="#menu" class="btn button-green mt-3">Get the full Menu</a>
                         </div>
-                        <div class="col-auto">
-                            <button type="submit" class="btn button-solid">Join Loop</button>
-                        </div>
-                    </div>   
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <!--Menu-->
+        <section id="menu">
+            <div class="container py-5">
+                <div>
+                    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                    <span class="eyebrow-label">The Menu</span>
+                    <h2>Liquid Joy, Bottled Daily.</h2>
+                </div>
+                <ul class="nav nav-pills justify-content-center mb-4" id="menuTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active rounded-5" id="juices-tab" data-bs-toggle="pill" data-bs-target="#juices" type="button" role="tab">Cold-Pressed Juices</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-5" id="smoothies-tab" data-bs-toggle="pill" data-bs-target="#smoothies" type="button" role="tab">Super Smoothies</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-5" id="shots-tab" data-bs-toggle="pill" data-bs-target="#shots" type="button" role="tab">Power Shots</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-5" id="snacks-tab" data-bs-toggle="pill" data-bs-target="#snacks" type="button" role="tab">Chef Snacks</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="menuTabsContent">
+                    <!--Juices-->
+                    <div class="tab-pane fade show active" id="juices" role="tabpanel">
+                        <p class="reset-pack text-center mb-4"><span>The Reset Pack</span> — Any 3 Smalls for <span>$16</span>!</p>  
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">Green Machine</h3>
+                                        <p class="menu-card-ingredients">Kale, apple, cucumber, lemon, ginger</p>
+                                        <p class="menu-card-punchline">"Tastes like a salad had a glow-up."</p>
+                                        <div class="menu-card-pricing">
+                                            <span>S <strong>$6.50</strong></span>
+                                            <span>M <strong>$7.50</strong></span>
+                                            <span>L <strong>$8.50</strong></span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/juices/green-machine.png" alt="Green machine juice">
+                                    </div>
+                                </div>            
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">Sunrise</h3>
+                                        <p class="menu-card-ingredients">Carrot, Orange, Turmeric, Black pepper</p>
+                                        <p class="menu-card-punchline">"Sunshine, but you can drink it."</p>
+                                        <div class="menu-card-pricing">
+                                            <span>S <strong>$6.50</strong></span>
+                                            <span>M <strong>$8.00</strong></span>
+                                            <span>L <strong>$9.50</strong></span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/juices/sunrise.png" alt="Sunrise juice">
+                                    </div>
+                                </div>            
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">Beet Street</h3>
+                                        <p class="menu-card-ingredients">Beet, Apple, Celery, Lemon</p>
+                                        <p class="menu-card-punchline">"Earthy, sweet, a little dramatic — like it wants applause."</p>
+                                        <div class="menu-card-pricing">
+                                            <span>S <strong>$5.50</strong></span>
+                                            <span>M <strong>$7.00</strong></span>
+                                            <span>L <strong>$8.50</strong></span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/juices/beet-street.png" alt="Beet Street juice">
+                                    </div>
+                                </div>            
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">Citrus Snap</h3>
+                                        <p class="menu-card-ingredients">Grapefruit, Orange, Mint, A touch of Lime</p>
+                                        <p class="menu-card-punchline">"A wake-up call, minus the yelling."</p>
+                                        <div class="menu-card-pricing">
+                                            <span>S <strong>$7.50</strong></span>
+                                            <span>M <strong>$9.00</strong></span>
+                                            <span>L <strong>$10.50</strong></span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/juices/citrus-snap.png" alt="Citrus Snap juice">
+                                    </div>
+                                </div>            
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">Watermelon Wake-Up</h3>
+                                        <p class="menu-card-ingredients">Watermelon, Mint, Lime, Cucumber</p>
+                                        <p class="menu-card-punchline">“Basically summer in a bottle."</p>
+                                        <div class="menu-card-pricing">
+                                            <span>S <strong>$7.00</strong></span>
+                                            <span>M <strong>$8.50</strong></span>
+                                            <span>L <strong>$10.00</strong></span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/juices/watermelon-wakeup.png" alt="Watermelon Wake-up juice">
+                                    </div>
+                                </div>            
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">Golden Hour</h3>
+                                        <p class="menu-card-ingredients">Pineapple, Turmeric, Orange, Ginger</p>
+                                        <p class="menu-card-punchline">“Sunset colors, sunrise energy."</p>
+                                        <div class="menu-card-pricing">
+                                            <span>S <strong>$7.00</strong></span>
+                                            <span>M <strong>$8.50</strong></span>
+                                            <span>L <strong>$10.00</strong></span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/juices/golden-hour.png" alt="Golden Hour juice">
+                                    </div>
+                                </div>            
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Smoothies-->
+                    <div class="tab-pane fade" id="smoothies" role="tabpanel">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">Berry Loop</h3>
+                                        <p class="menu-card-ingredients">Mixed berries, Banana, Almond milk, Honey</p>
+                                        <p class="menu-card-punchline">"Breakfast that doesn't require chewing."</p>
+                                        <div class="menu-card-pricing">
+                                            <span>S <strong>$6.50</strong></span>
+                                            <span>M <strong>$7.75</strong></span>
+                                            <span>L <strong>$9.00</strong></span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/smoothies/berry-loop.png" alt="Berry Loop Smoothie">
+                                    </div>
+                                </div>            
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">Tropic Thunder</h3>
+                                        <p class="menu-card-ingredients">Mango, Pineapple, Coconut water, Lime</p>
+                                        <p class="menu-card-punchline">"The one that tastes like you're already on vacation."</p>
+                                        <div class="menu-card-pricing">
+                                            <span>S <strong>$6.50</strong></span>
+                                            <span>M <strong>$8.00</strong></span>
+                                            <span>L <strong>$9.50</strong></span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/smoothies/tropic-thunder.png" alt="Tropic Thunder Smoothie">
+                                    </div>
+                                </div>            
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">Choc Protein Punch</h3>
+                                        <p class="menu-card-ingredients">Banana, Cocoa, Peanut butter, Protein powder, Oat milk</p>
+                                        <p class="menu-card-punchline">"Dessert with a gym membership."</p>
+                                        <div class="menu-card-pricing">
+                                            <span>S <strong>$8.00</strong></span>
+                                            <span>M <strong>$9.50</strong></span>
+                                            <span>L <strong>$11.00</strong></span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/smoothies/choc-protein.png" alt="Choc Protein Smoothie">
+                                    </div>
+                                </div>            
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">Green Glow</h3>
+                                        <p class="menu-card-ingredients">Spinach, Mango, Banana, Coconut water</p>
+                                        <p class="menu-card-punchline">"Sneaks in the greens. No one has to know."</p>
+                                        <div class="menu-card-pricing">
+                                            <span>S <strong>$6.50</strong></span>
+                                            <span>M <strong>$7.75</strong></span>
+                                            <span>L <strong>$9.00</strong></span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/smoothies/green-glow.png" alt="Green Glow Smoothie">
+                                    </div>
+                                </div>            
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">PB Banana Split</h3>
+                                        <p class="menu-card-ingredients">Banana, Peanut butter, Oat milk, Dates, Cinnamon</p>
+                                        <p class="menu-card-punchline">"Dessert that lied about being healthy."</p>
+                                        <div class="menu-card-pricing">
+                                            <span>S <strong>$7.50</strong></span>
+                                            <span>M <strong>$9.00</strong></span>
+                                            <span>L <strong>$10.50</strong></span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/smoothies/pb-banana-split.png" alt="PB Banana Split Smoothie">
+                                    </div>
+                                </div>            
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">Piña Chill</h3>
+                                        <p class="menu-card-ingredients">Pineapple, Coconut milk, Banana, Vanilla</p>
+                                        <p class="menu-card-punchline">"Beach vacation, extended edition."</p>
+                                        <div class="menu-card-pricing">
+                                            <span>S <strong>$6.75</strong></span>
+                                            <span>M <strong>$8.00</strong></span>
+                                            <span>L <strong>$9.25</strong></span>
+                                        </div>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/smoothies/pina-chill.png" alt="Piña Chill Smoothie">
+                                    </div>
+                                </div>            
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Wellness Shots-->
+                    <div class="tab-pane fade" id="shots" role="tabpanel">
+                        <p class="reset-pack text-center mb-4"><span>The Wellness Pack</span> — Any 3 for <span>$11</span>!</p>  
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">Beet It</h3>
+                                        <p class="menu-card-ingredients">Beet, Ginger, <br/> Lemon</p>
+                                        <p class="menu-card-punchline">"Small cup. Big opinions."</p>
+                                        <strong class="menu-card-pricing">$6.50</strong>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/wellness-shots/beet-it.png" alt="Beet It Shot">
+                                    </div>
+                                </div>            
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">Citrus Zing</h3>
+                                        <p class="menu-card-ingredients">Lemon, Cayenne, Maple syrup</p>
+                                        <p class="menu-card-punchline">"Sweet with a slap."</p>
+                                        <strong class="menu-card-pricing">$3.75</strong>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/wellness-shots/citrus-zing.png" alt="Fire Starter Shot">
+                                    </div>
+                                </div>            
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">Immunity Bomb</h3>
+                                        <p class="menu-card-ingredients">Ginger, Garlic, Lemon, Honey, Cayenne</p>
+                                        <p class="menu-card-punchline">"Not subtle. Not sorry."</p>
+                                        <strong class="menu-card-pricing">$4.50</strong>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/wellness-shots/immunity-bomb.png" alt="Immunity Bomb Shot">
+                                    </div>
+                                </div>            
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">Fire Starter</h3>
+                                        <p class="menu-card-ingredients">Turmeric, Cayenne, Orange, Black pepper</p>
+                                        <p class="menu-card-punchline">"Warning: may cause sudden motivation."</p>
+                                        <strong class="menu-card-pricing">$4.00</strong>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/wellness-shots/fire-starter.png" alt="Fire Starter Shot">
+                                    </div>
+                                </div>            
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">Deep Roots</h3>
+                                        <p class="menu-card-ingredients">Ginger, Turmeric, Black pepper</p>
+                                        <p class="menu-card-punchline">"Old-school remedy, new-school cup."</p>
+                                        <strong class="menu-card-pricing">$4.00</strong>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/wellness-shots/deep-roots.png" alt="Deep Roots Shot">
+                                    </div>
+                                </div>            
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">Cool Down</h3>
+                                        <p class="menu-card-ingredients">Cucumber, Mint, Lime, Aloe</p>
+                                        <p class="menu-card-punchline">"For when Fire Starter feels like too much."</p>
+                                        <strong class="menu-card-pricing">$3.75</strong>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/wellness-shots/cool-down.png" alt="Cool Down Shot">
+                                    </div>
+                                </div>            
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Snacks-->
+                    <div class="tab-pane fade" id="snacks" role="tabpanel">
+                        <p class="reset-pack text-center mb-4"><span>The Foodie Pack</span> — Any 2 for <span>$7.50</span>!</p>  
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">Peanut Butter Oat Energy Balls</h3>
+                                        <p class="menu-card-ingredients">Oats, Peanut butter, Honey, Chia seeds</p>
+                                        <p class="menu-card-punchline">"Fuel that doesn't taste like fuel."</p>
+                                        <strong class="menu-card-pricing">$4.00</strong>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/snacks/peanutbutter-oat-energy-balls.png" alt="Peanut Butter Oat Energy Balls">
+                                    </div>
+                                </div>            
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">Chocolate Almond Granola Bites</h3>
+                                        <p class="menu-card-ingredients">Granola, Almonds, Dark chocolate, Dates</p>
+                                        <p class="menu-card-punchline">"The healthy snack that forgot to tell you it's healthy."</p>
+                                        <strong class="menu-card-pricing">$4.50</strong>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/snacks/chocolate-almond-granola-bites.png" alt="Chocolate Almond Granola Bites">
+                                    </div>
+                                </div>            
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">Coconut Lime Bites</h3>
+                                        <p class="menu-card-ingredients">Coconut flakes, Lime zest, Cashews, Dates</p>
+                                        <p class="menu-card-punchline">"Tropical, but make it a snack."</p>
+                                        <strong class="menu-card-pricing">$4.00</strong>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/snacks/coconut-lime-bites.png" alt="Coconut Lime Bites">
+                                    </div>
+                                </div>            
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">Berry Oat Squares</h3>
+                                        <p class="menu-card-ingredients">Oats, Dried berries, Honey, Almond butter</p>
+                                        <p class="menu-card-punchline">"Breakfast, disguised as dessert."</p>
+                                        <strong class="menu-card-pricing">$4.25</strong>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/snacks/berry-oat-bites.png" alt="Berry Oat Squares">
+                                    </div>
+                                </div>            
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">Almond Date Bites</h3>
+                                        <p class="menu-card-ingredients">Almonds, Dates, Chia seeds, Sea salt</p>
+                                        <p class="menu-card-punchline">"Three ingredients. Zero apologies."</p>
+                                        <strong class="menu-card-pricing">$3.75</strong>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/snacks/almond-date-bites.png" alt="Almond Date Bites">
+                                    </div>
+                                </div>            
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 col-12">
+                                <div class="menu-card h-100">
+                                    <div class="menu-card-content">
+                                        <h3 class="menu-card-title">Tropical Trail Mix</h3>
+                                        <p class="menu-card-ingredients">Dried mango, Coconut flakes, Cashews, Pumpkin seeds</p>
+                                        <p class="menu-card-punchline">"Snacking, but make it a vacation."</p>
+                                        <strong class="menu-card-pricing">$4.50</strong>
+                                    </div>
+                                    <div class="menu-card-image">
+                                        <img src="./images/snacks/tropical-trail-mix.png" alt="Tropical Trail Mix">
+                                    </div>
+                                </div>            
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>       
+        </section>
+
+        <!--Origin Story-->
+        <section id="origin">
+            <div class="container px-4 mt-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-12 col-sm-10 col-lg-5">
+                        <img src="./images/our-story-image.png" class="d-block mx-lg-auto img-fluid" alt="our store and blenders" width="1800" height="700" loading="lazy">
+                    </div>
+                    <div class="col-lg-7">
+                        <span class="eyebrow-label">Our Origin</span>
+                        <h2>Fruit, Not Fuss</h2>
+                        <p class="body-text">Pulp & Peel started with a simple question: <span class="italic-text">why does “healthy” have to feel like a punishment?</span></p>
+                        <p class="body-text">Our founder, a former line cook, was tired of the guilt, rules, and joyless side of clean eating. So we went back to what makes food fun: <span class="green-text">real fruit</span>, <span class="green-text">bold flavors</span>, and <span class="green-text">no lectures</span>.</p>
+                        <p class="body-text">Built for busy mornings, post-gym cravings, and quick lunch breaks, Pulp & Peel keeps things fresh, fast, and full of personality.</p>
+                        <strong class="pink-text">No guilt. No lectures. Just good fruit.</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Location-->
+        <section id="locations">
+            <div class="container py-4">
+                <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                    <span class="eyebrow-label">Find A Bar</span>
+                    <h2>Where To Find Us?</h2>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 my-3 text-left">
+                    <div class="col mb-3">
+                        <div class="card rounded-5 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-heading">Downtown Gym Loop</h3>
+                                <p class="card-text">140 Pine St, Suite A</p>
+                                <p class="pink-text">Our very first counter.</p>
+                                <p class="timing">Mon-Fri: 7am - 7pm <br/> Sat-Sun: 7am - 4pm</p>
+                                <button type="button" class="btn button-outline mt-2">Get Directions</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card rounded-5 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-heading">Campus Corner</h3>
+                                <p class="card-text">9 University Ave</p>
+                                <p class="pink-text">Late hours for late study sessions.</p>
+                                <p class="timing">Mon-Fri: 7am - 9pm <br/> Sat-Sun: 9am - 6pm</p>
+                                <button type="button" class="btn button-outline mt-2">Get Directions</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="card rounded-5 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-heading">Riverside</h3>
+                                <p class="card-text">48 Harbor Lane</p>
+                                <p class="pink-text">Right by the running trail — grab one post-jog.</p>
+                                <p class="timing">Mon-Fri: 7am - 8pm <br/> Sat-Sun: 9am - 4pm</p>
+                                <button type="button" class="btn button-outline mt-2">Get Directions</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--CTA banner-->
+        <section id="cta">
+            <div class="container px-4 mt-5">
+                <div class="row align-items-center g-5 py-5">
+                    <div class="col-12 col-sm-10 col-lg-6">
+                        <h2>Don't miss a drop. Get 10% off on your first order.</h2>
+                        <p>Join the Loop for secret menu drops, weekly discounts, and first dibs on new flavors.</p>                     
+                    </div>
+                    <div class="col-lg-6 px-3">
+                        <div class="row g-2 align-items-center">
+                            <form id="newsletter-form" class="row g-2">
+                                <div class="col">
+                                    <input type="email" class="form-control p-3 rounded-5" placeholder="Enter your email" required>
+                                </div>
+                                <div class="col-auto">
+                                    <button type="submit" class="btn button-solid">Join Loop</button>
+                                </div>
+                                <p id="form-msg" class="mt-3 text-white fw-bold" role="status"></p>
+                                <p class="demo">(Demo: no email is sent.)</p>
+                                
+                            </form>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <!--Footer-->
     <section id="footer">
         <div class="container">
@@ -692,6 +712,9 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!--JS file link-->
+    <script src="./index.js"></script>
 
 </body>
 </html>
